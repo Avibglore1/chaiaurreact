@@ -4,16 +4,14 @@ function App() {
  const [counter,setCounter] = useState(5);
   const handleAdd = () =>{
     if(counter<=19) setCounter(counter+1);
-    
   }
   const handleReduce = ()=>{
     if(counter>=1) setCounter(counter-1);
-    
   }
   return (
     <>
-      <h1>Chai aur React</h1>
-      <h2>Counter: {counter}</h2>
+      <h1 className='font-bold bg- text-2xl'>Chai aur React</h1>
+      <h2 className='p-6 bg-yellow-400'>Counter: {counter}</h2>
       <button onClick={handleAdd}>Increment</button>
       <button onClick={handleReduce}>Decrement</button>
     </>
